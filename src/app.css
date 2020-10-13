@@ -1,0 +1,122 @@
+/* ------- FRONT END IMAGE -----*/
+
+.header,
+.userCard{
+    background-color: #f7f3f3;
+    border-radius: 10px;
+}
+
+.header{
+    margin-bottom: 10px;
+}
+
+.logo{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.head{
+    text-align: center;
+    padding-top: 10px   ;
+}
+
+img{
+    width: 20%;
+}
+
+/* ------- UserCard -----*/
+
+.userInfo{
+    margin-left: 10px;
+    width: 80%;
+    margin: auto;
+    padding-top: 12px;
+    /* padding-bottom: 12px; */
+}
+
+.userImage{
+    border-radius: 50%;
+}
+
+small{
+    color: gray;
+}
+
+.username::after{
+    content: ' ';
+    padding-left: 20px;
+    margin-left: 5px;
+    background-image: url('./img/icons.png');
+}
+
+.lists{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.lists li{
+    list-style: none;
+    margin: 7px;
+    background-color:#cbe9f0;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+/* ------- UserSubscribe -----*/
+
+.subscribe{
+    text-align: center;
+    background-color: #cbe9f0;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.subscribe button{
+    margin-top: 20px;
+    background-color:#e24653;
+    width: 40%;
+    border-radius: 7px;
+    border: none;
+    padding: 8px 0px;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:nth-child(n+2){
+    margin-left: 10px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 8px 6px;
+    border: none;
+}
+
+input:focus{
+    border-bottom: solid 2px red;
+}
+
+
+/* ------- UserSubscribe -----*/
+
+.hexa li{
+    list-style: none;
+    text-align: center;
+    padding: 25px 0;
+    background-color: rosybrown;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.hexa{
+    padding-left: 0;
+}
+
+.hexa li:nth-child(n + 2){
+    margin-top: 2px;
+}
