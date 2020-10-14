@@ -6,6 +6,8 @@ import react_logo from './img/react_logo.png'
 import css_logo from './img/css_logo.png'
 import asa from './img/asabeneh.jpg'
 
+/* Components */
+
 const Logo = ({data: {
     heading,
     html,
