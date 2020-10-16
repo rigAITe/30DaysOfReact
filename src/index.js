@@ -138,6 +138,31 @@ const Subscribe = ({heading, info }) => {
     )
 }
 
+const hexadecimal = () => {
+    let str = '0123456789abcdef'
+    let color = ''
+
+    for( let i = 0; i < 6; i++){
+        const index = Math.floor(Math.random() * str.length)
+        color += str[index]
+    }
+    return '#' + color
+
+
+}
+
+let array = []
+for( let i = 0; i < 4; i++){
+  let color = hexadecimal()																																		
+  array.push(color)
+}
+
+const Color = ({colors}) => {
+    const color = colors.map( color => <div className = 'color' style = {{backgroundColor: color }}>{color}</div>)
+    return color;
+}
+
+
 const App = () => {
     const data = {
         heading : 'Front End Development',
@@ -168,7 +193,6 @@ const App = () => {
         profession: 'Senior Developer',
         country: 'Finland', 
         skillsHeading: 'SKILLS',
-        // skilll: skillsFormatted,
         joined: 'Joined',
         date: { 
             month: month[time.getMonth()].slice(0,3),
@@ -176,6 +200,8 @@ const App = () => {
             year: time.getFullYear()
         }
     }
+
+    // const color = hexadecimal()
 
     const heading = 'Subscribe'
     const info = 'Sign up with your Email Address to receive news and update'
@@ -185,29 +211,12 @@ const App = () => {
             <Logo data = {data}/>
             <User userDetails = {userDetails}/>
             <Subscribe heading={heading} info={info}/>
+            <div className = 'colors'>
+                <Color colors= {array}/>
+            </div>
         </div>
     )
 }
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App/>, rootElement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

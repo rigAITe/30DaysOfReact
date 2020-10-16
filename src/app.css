@@ -1,3 +1,8 @@
+body{
+    width: 70%;
+    margin: auto;
+}
+
 /* ------- FRONT END IMAGE -----*/
 
 .header,
@@ -93,6 +98,7 @@ input{
     border-radius: 5px;
     padding: 8px 6px;
     border: none;
+    outline: none;
 }
 
 input:focus{
@@ -120,3 +126,20 @@ input:focus{
 .hexa li:nth-child(n + 2){
     margin-top: 2px;
 }
+
+/* ------- Hexadecimal Color -----*/
+
+.color{
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.color:nth-child(n + 2){
+    margin-top: 5px;
+}
+
+.colors{
+    margin-top: 10px;
+}
+
